@@ -16,10 +16,7 @@ function Navbar() {
               <a className="nav-link" href="/#">Главная</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/#">Телефоны</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/#">Телевизоры</a>
+              <a className="nav-link" href="/#">О нас</a>
             </li>
           </ul>
           <button type="button" className="btn btn-outline-primary float-right mr-2"><i className="fas fa-shopping-cart"></i><span className="badge badge-primary badge-pill">14</span></button>
