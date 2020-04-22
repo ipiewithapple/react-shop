@@ -3,7 +3,7 @@ import React from 'react';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
       <div className="container">
         <a className="navbar-brand" href="/#">RactShop</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,6 +17,9 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/#">О нас</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/#">Доставка</a>
             </li>
           </ul>
           <button type="button" className="btn btn-outline-primary float-right mr-2"><i className="fas fa-shopping-cart"></i><span className="badge badge-primary badge-pill">14</span></button>

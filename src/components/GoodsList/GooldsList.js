@@ -3,7 +3,6 @@ import GoodsCard from '../GoodsCard/GoodsCard';
 
 function GoodsList() {
   return (
-    <div className="container">
       <div className="row">
         <GoodsCard />
         <GoodsCard />
@@ -12,8 +11,6 @@ function GoodsList() {
         <GoodsCard />
         <GoodsCard />
       </div>
-    </div>
-
   );
 }
 
