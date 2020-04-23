@@ -1,7 +1,8 @@
 import React from 'react';
 
 
-function Navbar() {
+function Navbar(props) {
+  const {cartCnt} = props;
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
       <div className="container">
@@ -22,7 +23,7 @@ function Navbar() {
               <a className="nav-link" href="/#">Доставка</a>
             </li>
           </ul>
-          <button type="button" className="btn btn-outline-primary float-right mr-2"><i className="fas fa-shopping-cart"></i><span className="badge badge-primary badge-pill">14</span></button>
+  <button type="button" className="btn btn-outline-primary float-right mr-2"><i className="fas fa-shopping-cart"></i><span className="badge badge-primary badge-pill">{cartCnt}</span></button>
           <button type="button" className="btn btn-primary">Вход</button>
         </div>
       </div>

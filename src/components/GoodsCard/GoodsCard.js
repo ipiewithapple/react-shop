@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 
 function GoodsCard(props) {
-  const { title, desc, price, src } = props
+  const { title, desc, price, src, addGood } = props
   const [isInCart, changeIsInCart] = useState(false);
+  const onAddCartClick = () => {
+    if(!isInCart) {
+      changeIsInCart(true);
+      addGood();
+    }
+  }
 
   return (
     <div className="col-12 col-md-6 col-lg-4 mb-3">
@@ -12,7 +18,7 @@ function GoodsCard(props) {
           <a href="/#" className="card-title">{title}</a>
           <p className="card-text">{desc}</p>
           <h4 className="text-light">{`${price} руб.`}</h4>
-          <button className="btn btn-primary" onClick={() => changeIsInCart(true)}>{!isInCart ? "Купить" : "В корзине"}</button>
+          <button className="btn btn-primary" onClick={onAddCartClick}>{!isInCart ? "Купить" : "В корзине"}</button>
         </div>
       </div>
     </div>

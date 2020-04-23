@@ -2,10 +2,11 @@ import React from 'react';
 
 import Navbar from '../Navbar/Navbar';
 
-function Header() {
+function Header(props) {
+  const { cartCnt } = props;
   return (
     <header>
-      <Navbar />
+      <Navbar cartCnt={cartCnt} />
     </header>
   );
 }
