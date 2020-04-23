@@ -2,16 +2,13 @@ import React from 'react';
 
 function GoodsMenu() {
   return (
-    <aside class="col-12 col-lg-2 mb-3">
+    <aside className="col-12 col-lg-2 mb-3">
       <ul className="nav flex-column">
         <li className="nav-item">
-          <a className="nav-link active" href="/#">Товар1</a>
+          <a className="nav-link active" href="/#">Консоли</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/#">Товар2</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/#">Товар3</a>
+          <a className="nav-link" href="/#">Аксессуары</a>
         </li>
       </ul>
     </aside>

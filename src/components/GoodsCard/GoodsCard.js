@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 
-function GoodsCard() {
-
-  const [isInCart, changeIsInCart] = useState(true);
+function GoodsCard(props) {
+  const { title, desc, price, src } = props
+  const [isInCart, changeIsInCart] = useState(false);
 
   return (
     <div className="col-12 col-md-6 col-lg-4 mb-3">
       <div className="card">
-        <img src="assets/img/ps4.png" className="card-img-top" alt="..." />
+        <img src={src} className="card-img-top" alt={title} height="200" style={{objectFit: "contain"}}/>
         <div className="card-body">
-          <a href="/#" className="card-title">Sony Playstation 4</a>
-          <p className="card-text">500 Gb, Геймпад, Wi-Fi, Bluetooth, Ethernet</p>
-          <button className="btn btn-primary" onClick={() => changeIsInCart(!isInCart)}>{isInCart ? "Купить" : "В корзине"}</button>
+          <a href="/#" className="card-title">{title}</a>
+          <p className="card-text">{desc}</p>
+          <h4 className="text-light">{`${price} руб.`}</h4>
+          <button className="btn btn-primary" onClick={() => changeIsInCart(true)}>{!isInCart ? "Купить" : "В корзине"}</button>
         </div>
       </div>
     </div>

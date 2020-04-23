@@ -23,10 +23,7 @@ function Navbar() {
             </li>
           </ul>
           <button type="button" className="btn btn-outline-primary float-right mr-2"><i className="fas fa-shopping-cart"></i><span className="badge badge-primary badge-pill">14</span></button>
-          <div className="btn-group" role="group" aria-label="Basic example">
-            <button type="button" className="btn btn-primary">Вход</button>
-            <button type="button" className="btn btn-primary">Регистрация</button>
-          </div>
+          <button type="button" className="btn btn-primary">Вход</button>
         </div>
       </div>
     </nav>
